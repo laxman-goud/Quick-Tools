@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+main{
+    background-color: rgb(71, 24, 92);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: clamp(280px,24%,32%);
+    height: auto;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.heading{
+    font-size: clamp(15px, 29px, 43px);
+}
+.para{
+    font-size: 1rem;
+}
+#text{
+    width: 87%;
+    height: 1.5rem;
+    padding: 5px;
+    outline: none;
+}
+#btn{
+    height: 2.4rem;
+    outline: none;
+    border: none;
+    padding: 3px;
+    background-color: rgb(71, 24, 92);
+    color: white;
+}
+
+#text:focus{
+    outline: 1px solid rgb(71, 24, 92);
+}
+
+#btn:hover {
+    background-color: rgb(107, 49, 134);
+    transition: background-color 0.8s ease-in-out;
+}
+
+.QR-card{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    border: 1px solid rgb(72, 72, 72);
+}
+
+#QR-CODE{
+    height: 8rem;
+    width: 8rem;
+    margin:0.6rem auto 0.6rem auto;
+}
+
+.hide{
+    display: none;
+}
