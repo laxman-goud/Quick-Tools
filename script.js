@@ -3,55 +3,55 @@ const cards = [
         title: 'Life Timer',
         pic: 'Assets/images/p1.jpg',
         website: 'Life_Timer/index.html',
-        code: ''
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Life_Timer'
     },
     {
         title: 'Github Profile Finder',
         pic: 'Assets/images/p2.png',
         website: 'Github_Profile_Finder/index.html',
-        code: ''
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Github_Profile_Finder'
     },
     {
         title: 'Marks Calculator',
         pic: 'Assets/images/p3.png',
         website: 'Marks_Calculator/index.html',
-        code: ''
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Marks_Calculator'
     },
     {
         title: 'Simple Calculator',
         pic: 'Assets/images/p4.png',
         website: 'Calculator/index.html',
-        code: ''
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Calculator'
     },
     {
         title: 'Stop Watch',
         pic: 'Assets/images/p5.png',
         website: 'Stopwatch/index.html',
-        code: ''
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Stopwatch'
     },
     {
         title: 'Color Palette Generator',
         pic: 'Assets/images/p6.png',
         website: 'Color_Palette_Generator/index.html',
-        code: ''
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Color_Palette_Generator'
     },
     {
         title: 'QR Code Generator',
         pic: 'Assets/images/p7.png',
         website: 'QR_Code_Generator/index.html',
-        code: ''
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/QR_Code_Generator'
     },
     {
         title: 'To Do List',
         pic: 'Assets/images/p8.png',
         website: 'To_Do_List/index.html',
-        code: ''
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/To_Do_List'
     },
     {
         title: 'Password Generator',
         pic: 'Assets/images/p9.png',
         website: 'Password_Generator/index.html',
-        code: ''
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Password_Generator'
     },
 
 
