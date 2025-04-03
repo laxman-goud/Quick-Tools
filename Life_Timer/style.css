@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+body{
+    /* color: black; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+.super{
+
+    background-image: url("images/mountain.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.beforeDOB{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.beforeDOB>h2{
+    font-size: clamp(1.5rem, 4vw, 4rem);
+}
+
+
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+}
+.wheel{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+input{
+    width: 6.2rem;
+    border-radius: 3px;
+    border: hidden;
+    cursor: pointer;
+    background-color: rgb(172, 210, 248);
+    outline: none;
+}
+
+.btn{
+    width: 4.5rem;
+    border-radius: 3px;
+    background-color: rgb(38, 176, 38);
+    color: white;
+    border: hidden;
+    cursor: pointer;
+}
+
+
+.afterDOB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.hide{
+    display: none;
+}
+.Time{
+    display: flex;
+    gap: 13px;
+}
+.afterDOB>h2{
+    font-size: clamp(1.1rem, 4vw, 4rem);
+}
+.times{
+    font-size: clamp(1.1rem, 4vw, 4rem);
+    text-align: center;
+}
+.times>h3{
+    font-size: clamp(0.8rem, 2.4vw, 2.8rem);
+}
+.Time h2{
+    color: white;
+    font-size: clamp(1.2rem, 3.8vw, 4rem);
+}

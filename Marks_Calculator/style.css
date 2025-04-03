@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Gidole&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Space Mono";
+}
+/* 🔥main styles */
+main{
+    background-image: url('images/background.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* 🔥 card styles */
+.card{
+    background-color: rgb(57, 62, 62);
+    width: clamp(60vw,36vw,40vw);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    border: 2px solid rgb(73, 173, 231);
+    padding: 2rem;
+    margin-left: 1.3rem;
+    gap: 1rem;
+}
+
+.card-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.card-inputs>input{
+    width: clamp(8rem,40%,16rem);
+    height: 2.1rem;
+    background-color: rgb(57, 62, 62);
+    outline: 1px solid rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px; 
+    padding: 0.4rem;
+    color: white;
+}
+.card-inputs>input:focus{
+    outline: 2px solid rgba(92, 156, 234, 0.928);
+    border: none;
+}
+
+#calculate{
+    background-color: #2ea4c8;
+    border: none;
+    outline: none;
+    width: 8rem;
+    height: 2.2rem;
+    border-radius: 1rem;
+}
+#result{
+    color: white;
+}
+.card-inputs>input::placeholder{
+    color: white;
+}
+.hide{
+    display: none;
+}
+
+/* 🔥 .content styles */
+.content{
+    margin-left: 12%;
+    margin-top: 1.3rem;
+}
+.content>h2{
+    font-size: 2.3rem;
+}
+.content>h1{
+    font-size: 3rem;
+}
+
+@media (max-width:600px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url();
+        background-color: #a2e0e49a;
+    }
+
+}

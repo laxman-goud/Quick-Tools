@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Gidole&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.878);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Space Mono", monospace;
+}
+
+/* 🔥main styles */
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+.main .hd1{
+    font-size: clamp(1.5rem, 4vw, 4rem);
+}
+
+/* 🔥 bar styles */
+.bar{
+    display: flex;
+}
+.bar #search{
+    width: 40vw;
+    height: 2.2rem;
+    border: 1px solid rgb(243, 243, 243);
+    padding: 0.4rem;
+    border-radius: 5px 0 0 5px;
+}
+.bar #btn{
+    width: 4.3rem;
+    height: 2.2rem;
+    border: 2px solid rgb(243, 243, 243);
+    border-radius: 0 5px 5px 0;
+    background-color: white
+}
+.bar #search:focus{
+    outline: 0.1rem solid rgba(255, 255, 255, 0.851);
+}
+
+/* 🔥Profile Card Styles */
+#profileCard{
+    width:64vw;
+    height: auto;
+    background-color: #fffffffd;
+    color: black;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+#profileCard:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.5); 
+}
+
+.top{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.top #checkProfile{
+    margin-left: auto;
+}
+.top #top-img{
+    width: 10vw;
+    height: auto;
+    border-radius: 50%;
+}
+.top #checkProfile{
+    height: 2rem;
+    width: 8.4rem;
+    border-radius: 3px;
+    background-color: rgba(226, 127, 213, 0.79);
+    cursor: pointer;
+}
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+.followers,.following,.Repos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 530px) {
+    .bar {
+        flex-direction: column; 
+        gap: 5px; 
+        align-items: center;
+    }
+    #search,#btn{
+        border-radius: 3px !important;
+    }
+    #search{
+        width: 100%;
+    }
+    .bar input::placeholder {
+        font-size: 0.6rem; 
+        color: gray; 
+    }
+    .bottom{
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    .top{
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .top-cont h3{
+        font-size: 0.9rem;
+    }
+
+}
+
+.hide{
+    display: none;
+    visibility: hidden  ;
+}

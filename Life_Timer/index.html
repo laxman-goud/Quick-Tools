@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="super">
+        <div class="beforeDOB">
+            <h2>Kindly Enter Your Date Of Birth</h2>
+        </div>
+
+        <div class="afterDOB hide">
+            <h2>How Much Life Journey Covered, Till Now</h2>
+            <div class="Time" id="timer">
+                <div class="times"><h2 class="Years">00</h2><h3>Years</h3></div>
+                <div class="times"><h2 class="Months">00</h2> <h3>Months</h3></div>
+                <div class="times"><h2 class="Days">00</h2><h3>Days</h3></div>
+                <div class="times"><h2 class="Hours">00</h2><h3>Hours</h3></div>
+                <div class="times"><h2 class="Minutes">00</h2><h3>Minutes</h3></div>
+                <div class="times"><h2 class="Seconds">00</h2><h3>Seconds</h3></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <i class="fa fa-cog wheel" id="Wheel"></i>
+            <input type="date" id="DOB">
+            <button class="btn" id="button">Add</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

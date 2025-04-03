@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --primaryColor:#0F1625;
+    --secondaryColor:#A09DFF;
+    --textColor:white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-color: var(--primaryColor);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border:1px solid red; */
+}
+
+/* 🔥 nav bar styles */
+header{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    width: 100%;
+    padding: 0.7rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-left{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.nav-left>span{
+    color: rgb(242, 242, 77);
+}
+.nav-right a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+.nav-right{
+    display: flex;
+    list-style-type: none;
+    margin: 0 3px 0 auto;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+.nav-right li {
+    position: relative; 
+}
+.nav-right li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px;
+    background-color: var(--textColor);
+    transition: width 0.5s ease-in; 
+}
+.nav-right li:hover::after {
+    width: 100%; 
+}
+
+@media (max-width:480px) {
+    header{
+        padding: 0.2rem;
+    }
+    .nav-left{
+        font-size: 1.2rem;
+    }
+    .nav-right{
+        font-size: 0.9rem;
+        gap: 1rem;
+    }
+
+}
+/* 🔥content styles */
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    height: 340px;
+}
+.text{
+    font-size: clamp(22px,9vw,3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text>h1>span{
+    color: rgb(248, 248, 59);
+}
+.text>p{
+    color: var(--textColor);
+    font-size: clamp(18px,55%,3rem);
+}
+
+/* 🔥styles for projects */
+.projects{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+    border: 1px solid var(--primaryColor); 
+    box-shadow: 0 0 10px var(--secondaryColor), 0 0 16px var(--secondaryColor) inset;
+}
+.projects>h1{
+    font-size: 2rem;
+}
+.project-container{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+    gap: 4px;
+}
+.img{
+    width: clamp(310px,32vw,420px);
+    height: clamp(1rem,33vh,227px);
+    border-radius: 0.6rem;
+    position: relative;
+}
+.project-title-1 {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 10px;
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.776); 
+    color: var(--textColor);
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.776);
+    cursor: pointer;
+}
+.project-title-2 {
+    position: absolute;
+    bottom: 2.4rem;
+    right: 10px;
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.776);
+    color: var(--textColor);
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hide {
+    opacity: 0; 
+    transform: translateY(10px); 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover .hide {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+/* 🔥 Contact Section styles */
+footer{
+    margin-top: 3rem;
+    width: 100vw;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+}
+.icons{
+    width: 100vw;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+    font-size: 1.5rem;
+}
+.icons>a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+.credits{
+    margin: auto 0 5px 0;
+    color: rgb(130, 130, 130);
+}
