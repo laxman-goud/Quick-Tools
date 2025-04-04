@@ -149,7 +149,7 @@ header{
     color: var(--textColor);
     text-align: center;
     padding: 10px 0;
-    font-weight: bold;
+    font-weight: lighter;
     background-color: rgba(0, 0, 0, 0.776);
     cursor: pointer;
 }
@@ -162,7 +162,7 @@ header{
     color: var(--textColor);
     text-align: center;
     padding: 10px 0;
-    font-weight: bold;
+    font-weight: lighter;
     cursor: pointer;
 }
 .hide {

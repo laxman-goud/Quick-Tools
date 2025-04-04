@@ -63,8 +63,8 @@ const projectsFunction = (e) => {
     return `<div class="card">
                     <img src="${e.pic}" alt="" class="img">
                     <div class="links-card">
-                        <a href="${e.website}"><h3 class="project-title-1 hide">live</h3></a>
-                        <a href="${e.code}"><h3 class="project-title-2 hide">source code</h3></a>
+                        <a href="${e.website}"><p class="project-title-1 hide">Live Demo</p></a>
+                        <a href="${e.code}"><p class="project-title-2 hide">Github</p></a>
                     </div>
                     <h3>${e.title}</h3>
                 </div>`;
