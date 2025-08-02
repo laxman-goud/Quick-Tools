@@ -1,9 +1,10 @@
+// Array of project objects, each containing information about a tool/card
 const cards = [
     {
-        title: 'Life Timer',
-        pic: 'Assets/images/p1.jpg',
-        website: 'Life_Timer/index.html',
-        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Life_Timer'
+        title: 'Life Timer', // Project title
+        pic: 'Assets/images/p1.jpg', // Thumbnail image path
+        website: 'Life_Timer/index.html', // Link to live demo
+        code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Life_Timer' // GitHub repo
     },
     {
         title: 'Github Profile Finder',
@@ -52,24 +53,30 @@ const cards = [
         pic: 'Assets/images/p9.png',
         website: 'Password_Generator/index.html',
         code: 'https://github.com/laxman-goud/Quick-Tools/tree/39304238d01c4cc75c0b97b13eb4c930ea9119c1/Password_Generator'
-    },
+    }
+];
 
-
-]
-
+// Select the container where all project cards will be displayed
 const projectContainer = document.querySelector('.project-container');
 
+// Function to generate HTML for a single project card
 const projectsFunction = (e) => {
     return `<div class="card">
-                    <img src="${e.pic}" alt="" class="img">
-                    <div class="links-card">
-                        <a href="${e.website}"><p class="project-title-1 hide">Live Demo</p></a>
-                        <a href="${e.code}"><p class="project-title-2 hide">Github</p></a>
-                    </div>
-                    <h3>${e.title}</h3>
-                </div>`;
+                <!-- Project thumbnail -->
+                <img src="${e.pic}" alt="" class="img">
+                
+                <!-- Links to live demo and GitHub repo -->
+                <div class="links-card">
+                    <a href="${e.website}"><p class="project-title-1 hide">Live Demo</p></a>
+                    <a href="${e.code}"><p class="project-title-2 hide">Github</p></a>
+                </div>
+
+                <!-- Project title -->
+                <h3>${e.title}</h3>
+            </div>`;
 }
 
+// Loop through each project in the cards array and append the generated HTML to the container
 for (let card of cards) {
     projectContainer.innerHTML += projectsFunction(card);
 }
