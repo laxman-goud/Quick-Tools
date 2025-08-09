@@ -203,3 +203,6 @@ footer{
     margin: auto 0 5px 0;
     color: rgb(130, 130, 130);
 }
+.credits a{
+    color: gray;
+}
