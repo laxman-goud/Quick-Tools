@@ -11,8 +11,7 @@ Here are a few tools that this repo include:
 - ✅ QR Code Generator – Generate QR codes for any text or link
 - ✅ Stopwatch / Timer – Track time for any task
 - ✅ Unit Converter – Convert between units (length, weight, etc.)
-
-> 📌 You can add more utilities easily by following the same folder/file structure.
+- and more
 
 ---
 
@@ -70,10 +69,15 @@ GitHub: [@laxman-goud](https://github.com/laxman-goud)
 
 ---
 
-### 🌐 Live Demo (Optional)
+## 🤝 Contributing
 
-Host it on GitHub Pages or Vercel for quick access to each tool online.
+Contributions are welcome! 🎉  
+
+Feel free to **fork this project**, open an **issue**, or submit a **pull request** with your improvements.  
+Please make sure your changes are clear, concise, and follow the contributing guidelines. 
 
 ---
 
-Enjoy using Quick Tools and share it with others!
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
